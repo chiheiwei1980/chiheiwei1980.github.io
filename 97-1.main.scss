@@ -1,6 +1,8 @@
 body {
     margin: 0;
     position: relative;
+
+
 }
     .modal-dialog {
         max-width: 100vw;
@@ -120,7 +122,6 @@ body {
                 .text {
                     padding: 0 50px;
                     z-index: 11;
-
                 }
         }
         .col-12 {
@@ -197,6 +198,24 @@ body {
                     overflow: auto;
                     letter-spacing: 5px;
                     line-height: 25px;
+                    // 卷軸樣式修改//
+                    ::-webkit-scrollbar {
+                        // 卷軸寬度//
+                        width: 5px;
+                      }
+                      /* Track */
+                      ::-webkit-scrollbar-track {
+                        box-shadow: inset 0 0 5px grey;
+                        border-radius: 5px; 
+                      }
+                       
+                      /* Handle */
+                      ::-webkit-scrollbar-thumb {
+                        background: #AAA; 
+                        border-radius: 5px;
+                        
+                      }
+                      
                     @media screen and (max-width: 991px) {
                         height: 600px;
                     }
@@ -364,7 +383,7 @@ body {
                 width: 70px;
                 height: 70px;
                 border-radius: 50%;
-                background-image: url(./img/98-8-pc.jpg);
+                background-image: url(./img/97-1-pc.jpg);
                 background-position: center;
                 background-size: cover;
                 right: 8px;
@@ -389,6 +408,9 @@ body {
                 height: 100px;
                 line-height: 100px;
                 margin-left: 30px;
+                @media screen and (max-width:500px) {
+                    margin-left: 10px;
+                }
                 a {
                     background-color: #AAA;
                     color: white;
@@ -398,20 +420,30 @@ body {
                     letter-spacing: 2px;
                     font-size: 12px;
                 }
-                @media screen  and (max-width:500px) {
-                    margin-left: 10px;
-                    p {
-                        font-size: 8px;
-                    }
-                }
-
-
-
-
             }
 
         
         
     }
         
-    
+    // 卷軸樣式修改//
+    // ::-webkit-scrollbar {
+    //     width: 10px;
+    //   }
+      
+    //   /* Track */
+    //   ::-webkit-scrollbar-track {
+    //     box-shadow: inset 0 0 5px grey; 
+    //     border-radius: 10px;
+    //   }
+       
+    //   /* Handle */
+    //   ::-webkit-scrollbar-thumb {
+    //     background: #AAA; 
+    //     border-radius: 10px;
+    //   }
+      
+      /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+        background: #b30000; 
+      }

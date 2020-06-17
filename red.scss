@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    font-family: "微軟正黑體";
+    scroll-behavior: smooth;
+    #nvr {
+        max-width: 100vw;
+        height: 50px;
+        background-color: bisque;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .font-style {
+            margin: 0;
+            font-size: 36px;
+            font-weight: bolder;
+        }
+        p:hover {
+            font-size: 38px;
+            color: white;
+            background-color: black;
+            border-radius: 5%;
+        }
+
+    }
+
+    #about {
+        margin: 0;
+        max-width: 100vw;
+        height: 100vh;
+        position: relative;
+        background-image: url(/img/S__3825680.jpg);
+        background-position: center;
+        background-size: cover;
+            .font_about {
+                
+                position: absolute;
+                font-size: 32px;
+                color: black;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            p:hover {
+                font-size: 36px;
+                color: white;
+                background-color: bisque;
+            }
+    }
+    #taste {
+        max-width: 100vw;
+        height: 100vh;
+        background-image: url(/img/IMG_0035.jpg);
+        background-position: center;
+        background-size: cover;
+
+    }
+    #googlemap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: black;
+        max-width: 100vw;
+        height: 100vh;
+        font-size: 32px;
+        color: white;
+    }
+}
